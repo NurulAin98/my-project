@@ -9,7 +9,7 @@ function RecipeList() {
     dataMarkup = data.meals.map(function (m) {
       return (
         <div>
-          <h2>{m.strMeal}</h2>
+          <h2>{m.strMeal.toUpperCase()}</h2>
           <img src={m.strMealThumb} crossOrigin="true" />
           <h3>Area: </h3>
           <p>{m.strArea}</p>

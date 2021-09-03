@@ -2,6 +2,7 @@ const { BrowserRouter, Switch, Route } = require("react-router-dom");
 const Nav = require("./nav");
 const RecipeList = require("./recipeList");
 const Home = require("./home");
+const Random = require("./random");
 
 function App() {
     let pageTitle = "Welcome to Food Library!";
@@ -14,6 +15,9 @@ function App() {
             </Route>
             <Route path="/recipeList">
                 <RecipeList />
+            </Route>
+            <Route path="/recipeList">
+                <Random />
             </Route>
         </Switch>
         </BrowserRouter>
