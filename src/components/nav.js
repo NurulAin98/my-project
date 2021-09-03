@@ -8,7 +8,7 @@ function Nav({ title }) {
                 <nav>
                 <Link to="/">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;
                 <Link to="/recipeList">Find Recipe</Link>&nbsp;&nbsp;&nbsp;&nbsp;
-                <Link to="/random">Random Recipe</Link>
+                <Link to="/random">Random Meal</Link>
                </nav>
             </center><br></br><br></br>
         </header>
