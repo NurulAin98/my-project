@@ -16,7 +16,7 @@ function App() {
             <Route path="/recipeList">
                 <RecipeList />
             </Route>
-            <Route path="/recipeList">
+            <Route path="/random">
                 <Random />
             </Route>
         </Switch>

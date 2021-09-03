@@ -8,7 +8,7 @@ function RecipeList() {
   if (data !== null) {
     dataMarkup = data.meals.map(function (m) {
       return (
-        <div>
+        <div style={{ paddingTop: "10px"}}>
           <h2>{m.strMeal.toUpperCase()}</h2>
           <img src={m.strMealThumb} crossOrigin="true" />
           <h3>Area: </h3>
