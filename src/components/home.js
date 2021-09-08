@@ -1,8 +1,12 @@
 function Home() {
     return(
-        <div>
-            <h2></h2>
+        <center style={{margin: "100px"}}>
+        <div style= {{ backgroundColor: "lightsalmon"}}>
+            <h2>Hey peeps!</h2>
+            <p><b>Don't know what to eat? No worries, Mealpedia will help you :D </b></p>
+            <p><b>Get your random meal or satisfy your craving by searching the recipe, yummy!</b></p>
         </div>
+        </center>
     );
 }
 

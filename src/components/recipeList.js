@@ -14,7 +14,7 @@ function RecipeList() {
           <h3>Area: </h3>
           <p>{m.strArea}</p>
           <h3>Instructions: </h3>
-          <p>{m.strInstructions}</p>
+          <p style={{ textAlign: "justify"}}>{m.strInstructions}</p>
         </div>
       );
     });

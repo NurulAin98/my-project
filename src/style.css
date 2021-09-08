@@ -3,6 +3,16 @@ body {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+h1 {
+  font-family: "Cursive", "Lucida Handwriting";
+}
+
+header {
+  background-color: brown;
+  color: white;
+  margin-top: auto;
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -11,14 +21,38 @@ img {
   border-radius: 50px;
 }
 
-nav {
+button {
+  font-family: "Lucida Console", "Courier New", monospace;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: sandybrown;
+}
+.button2 {
+  background-color: sandybrown;
+}
+
+.button3 {
+  background-color: sandybrown;
+}
+
+/* nav {
   background-color: sandybrown;
   color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-}
+} */
 
 form {
   font-family: "Lucida Console", "Courier New", monospace;

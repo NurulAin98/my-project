@@ -1,14 +1,15 @@
 const { BrowserRouter, Switch, Route } = require("react-router-dom");
 const Nav = require("./nav");
 const RecipeList = require("./recipeList");
-const Home = require("./home");
 const Random = require("./random");
+const Home = require("./home");
 
 function App() {
-    let pageTitle = "Welcome to Food Library!";
+    let pageTitle = "Mealpedia";
+    let subtitle = "Good Food, Good Mood!";
     return(
         <BrowserRouter>
-        <Nav title={pageTitle} />
+        <Nav title={pageTitle} subtitle={subtitle}/>
         <Switch>
             <Route exact={true} path="/">
                 <Home />
