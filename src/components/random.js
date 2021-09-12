@@ -1,8 +1,8 @@
-const { useState, useEffect} = require("react");
+const { useState, useEffect } = require("react");
 
 function Random() {
   const [data, setData] = useState(null);
-  useEffect(function() {
+  useEffect(function () {
     let url = `https://www.themealdb.com/`;
     let queryString = `/api/json/v1/1/random.php`;
     let httpOptions = {
@@ -27,29 +27,24 @@ function Random() {
       return (
         <div>
           <h2>{m.strMeal.toUpperCase()}</h2>
-          <img src={m.strMealThumb} crossOrigin="true" style={{ size: "10px 10px 10px" }}/>
+          <img
+            src={m.strMealThumb}
+            crossOrigin="true"
+            style={{ size: "10px 10px 10px" }}
+          />
           <h3>Area: </h3>
           <p>{m.strArea}</p>
           <h3>Instructions: </h3>
-          <p style={{ textAlign: "justify"}}>{m.strInstructions}</p>
+          <p style={{ textAlign: "justify" }}>{m.strInstructions}</p>
         </div>
       );
     });
   }
-  // else {
-  //   return(
-  //     <div>
-  //       <p></p>
-  //     </div>
-  //   );
-  // }
-
-    
 
   return (
     <center>
       <div style={{ paddingTop: "10px" }}>
-      <p>Your random meal is {dataMarkup}</p>
+        <p>Your random meal is {dataMarkup}</p>
       </div>
     </center>
   );
